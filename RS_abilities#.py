@@ -152,3 +152,170 @@ while tick != final_tick:
         cast_cd -= 1
     
     tick+=1
+    
+##########
+def CurrentOutput():
+    tick: 0
+    adren: 0 damage 0
+    cd's: [0, 0, 0, 0, 0]
+    ability chosen: GConc
+
+    tick: 4
+    adren: 8 damage 107.0
+    cd's: [5, 0, 0, 0, 0]
+    ability chosen: DBreath
+
+    tick: 6
+    adren: 16 damage 182.5
+    cd's: [3, 15, 0, 0, 0]
+    ability chosen: Wrack
+
+    tick: 8
+    adren: 24 damage 220.5
+    cd's: [1, 13, 3, 0, 0]
+    ability chosen: Impact
+
+    tick: 10
+    adren: 32 damage 260.5
+    cd's: [0, 11, 1, 23, 0]
+    ability chosen: GConc
+
+    tick: 14
+    adren: 40 damage 367.5
+    cd's: [5, 7, 0, 19, 0]
+    ability chosen: Wrack
+
+    tick: 16
+    adren: 48 damage 405.5
+    cd's: [3, 5, 3, 17, 0]
+    ability chosen: Auto
+
+    tick: 18
+    adren: 56 damage 405.5
+    cd's: [0, 1, 3, 1, 15, 0]
+    ability chosen: Asphyxiate
+
+    tick: 26
+    adren: 41 damage 706.5
+    cd's: [0, 0, 0, 7, 0]
+    ability chosen: GConc
+
+    tick: 30
+    adren: 49 damage 813.5
+    cd's: [5, 0, 0, 3, 0]
+    ability chosen: DBreath
+
+    tick: 32
+    adren: 57 damage 889.0
+    cd's: [20, 3, 15, 0, 1, 0]
+    ability chosen: Wrack
+
+    tick: 34
+    adren: 65 damage 927.0
+    cd's: [18, 1, 13, 3, 0, 0]
+    ability chosen: Impact
+
+    tick: 36
+    adren: 73 damage 967.0
+    cd's: [16, 0, 11, 1, 23, 0]
+    ability chosen: GConc
+
+    tick: 40
+    adren: 81 damage 1074.0
+    cd's: [12, 5, 7, 0, 19, 0]
+    ability chosen: Wrack
+
+    tick: 42
+    adren: 89 damage 1112.0
+    cd's: [10, 3, 5, 3, 17, 0]
+    ability chosen: Auto
+
+    tick: 44
+    adren: 97 damage 1112.0
+    cd's: [8, 1, 3, 1, 15, 0]
+    ability chosen Auto
+
+    tick: 46
+    adren: 100 damage 1112.0
+    cd's: [6, 0, 1, 0, 13, 0]
+    ability chosen GConc
+
+    tick: 50
+    adren: 100 damage 1219.0
+    cd's: [2, 5, 0, 0, 9, 0]
+    ability chosen DBreath
+
+    tick: 52
+    adren: 100 damage 1294.5
+    cd's: [0, 3, 15, 0, 7, 0]
+    ability chosen Asphyxiate
+
+    tick: 60
+    adren: 85 damage 1595.5
+    cd's: [26, 0, 7, 0, 0, 0]
+    ability chosen GConc
+
+    tick: 64
+    adren: 93 damage 1702.5
+    cd's: [22, 5, 3, 0, 0, 0]
+    ability chosen Wrack
+
+    tick: 66
+    adren: 100 damage 1740.5
+    cd's: [20, 3, 1, 3, 0, 0]
+    ability chosen Impact
+
+    tick: 68
+    adren: 100 damage 1780.5
+    cd's: [18, 1, 0, 1, 23, 0]
+    ability chosen DBreath
+
+    tick: 70
+    adren: 100 damage 1856.0
+    cd's: [16, 0, 15, 0, 21, 0]
+    ability chosen GConc
+
+    tick: 74
+    adren: 100 damage 1963.0
+    cd's: [12, 5, 11, 0, 17, 0]
+    ability chosen Wrack
+
+    tick: 76
+    adren: 100 damage 2001.0
+    cd's: [10, 3, 9, 3, 15, 0]
+    ability chosen Auto
+
+    tick: 78
+    adren: 100 damage 2001.0
+    cd's: [8, 1, 7, 1, 13, 0]
+    ability chosen Auto
+
+    tick: 80
+    adren: 100 damage 2001.0
+    cd's: [6, 0, 5, 0, 11, 0]
+    ability chosen GConc
+
+    tick: 84
+    adren: 100 damage 2108.0
+    cd's: [2, 5, 1, 0, 7, 0]
+    ability chosen Wrack
+
+    tick: 86
+    adren: 100 damage 2146.0
+    cd's: [0, 3, 0, 3, 5, 0]
+    ability chosen Asphyxiate
+
+    tick: 94
+    adren: 85 damage 2447.0
+    cd's: [26, 0, 0, 0, 0, 0]
+    ability chosen GConc
+
+    tick: 98
+    adren: 93 damage 2554.0
+    cd's: [22, 5, 0, 0, 0, 0]
+    ability chosen DBreath
+
+    tick: 100
+    adren: 100 damage 2629.5
+    cd's: [20, 3, 15, 0, 0, 0]
+    ability chosen Wrack
