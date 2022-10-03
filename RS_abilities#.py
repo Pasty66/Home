@@ -1,4 +1,4 @@
-abilities_bar = [Asphyxiate, GConc, DBreath, Wrack, Impact, Auto]
+abilities_bar = [Omnipower, Asphyxiate, GConc, DBreath, Wrack, Impact, Auto]
 
 class Player:
     t_damage = 0
@@ -83,7 +83,8 @@ class Auto:
 #print("T1")
 
 #ability_list = [Wrack, Impact, GConc, Asphyxiate, Omnipower, DBreath, Auto]
-ability_list = abilities_bar
+ability_list = [Omnipower, Asphyxiate, GConc, DBreath, Wrack, Impact, Auto]
+
     
 def select(c_adren):
     adren_check = []
@@ -127,7 +128,7 @@ def cycle():
     print("adren:", Player.adrenaline, "damage", Player.t_damage)
     
     ability_used = select(adren) #this selects the first ability on the list not on cooldown.
-    print("ability chosen", ability_used.name)
+    print("ability chosen:", ability_used.name)
     
     dmg_done, adren_gain, cast_time = activate(ability_used) #this activates the selected ability and sets in on cooldown
     
@@ -234,89 +235,94 @@ def CurrentOutput():
     tick: 44
     adren: 97 damage 1112.0
     cd's: [8, 1, 3, 1, 15, 0]
-    ability chosen Auto
+    ability chosen: Auto
 
     tick: 46
     adren: 100 damage 1112.0
-    cd's: [6, 0, 1, 0, 13, 0]
-    ability chosen GConc
+    cd's: [0, 6, 0, 1, 0, 13, 0]
+    ability chosen: Omnipower
 
-    tick: 50
-    adren: 100 damage 1219.0
-    cd's: [2, 5, 0, 0, 9, 0]
-    ability chosen DBreath
+    tick: 51
+    adren: 0 damage 1212.0
+    cd's: [0, 0, 0, 8, 0]
+    ability chosen: GConc
 
-    tick: 52
-    adren: 100 damage 1294.5
-    cd's: [0, 3, 15, 0, 7, 0]
-    ability chosen Asphyxiate
+    tick: 55
+    adren: 8 damage 1319.0
+    cd's: [5, 0, 0, 4, 0]
+    ability chosen: DBreath
 
-    tick: 60
-    adren: 85 damage 1595.5
-    cd's: [26, 0, 7, 0, 0, 0]
-    ability chosen GConc
+    tick: 57
+    adren: 16 damage 1394.5
+    cd's: [3, 15, 0, 2, 0]
+    ability chosen: Wrack
 
-    tick: 64
-    adren: 93 damage 1702.5
-    cd's: [22, 5, 3, 0, 0, 0]
-    ability chosen Wrack
+    tick: 59
+    adren: 24 damage 1432.5
+    cd's: [1, 13, 3, 0, 0]
+    ability chosen: Impact
 
-    tick: 66
-    adren: 100 damage 1740.5
-    cd's: [20, 3, 1, 3, 0, 0]
-    ability chosen Impact
+    tick: 61
+    adren: 32 damage 1472.5
+    cd's: [0, 11, 1, 23, 0]
+    ability chosen: GConc
 
-    tick: 68
-    adren: 100 damage 1780.5
-    cd's: [18, 1, 0, 1, 23, 0]
-    ability chosen DBreath
+    tick: 65
+    adren: 40 damage 1579.5
+    cd's: [5, 7, 0, 19, 0]
+    ability chosen: Wrack
 
-    tick: 70
-    adren: 100 damage 1856.0
-    cd's: [16, 0, 15, 0, 21, 0]
-    ability chosen GConc
+    tick: 67
+    adren: 48 damage 1617.5
+    cd's: [3, 5, 3, 17, 0]
+    ability chosen: Auto
 
-    tick: 74
-    adren: 100 damage 1963.0
-    cd's: [12, 5, 11, 0, 17, 0]
-    ability chosen Wrack
+    tick: 69
+    adren: 56 damage 1617.5
+    cd's: [0, 1, 3, 1, 15, 0]
+    ability chosen: Asphyxiate
 
-    tick: 76
-    adren: 100 damage 2001.0
-    cd's: [10, 3, 9, 3, 15, 0]
-    ability chosen Auto
+    tick: 77
+    adren: 41 damage 1918.5
+    cd's: [0, 0, 0, 7, 0]
+    ability chosen: GConc
 
-    tick: 78
-    adren: 100 damage 2001.0
-    cd's: [8, 1, 7, 1, 13, 0]
-    ability chosen Auto
+    tick: 81
+    adren: 49 damage 2025.5
+    cd's: [5, 0, 0, 3, 0]
+    ability chosen: DBreath
 
-    tick: 80
-    adren: 100 damage 2001.0
-    cd's: [6, 0, 5, 0, 11, 0]
-    ability chosen GConc
+    tick: 83
+    adren: 57 damage 2101.0
+    cd's: [20, 3, 15, 0, 1, 0]
+    ability chosen: Wrack
 
-    tick: 84
-    adren: 100 damage 2108.0
-    cd's: [2, 5, 1, 0, 7, 0]
-    ability chosen Wrack
+    tick: 85
+    adren: 65 damage 2139.0
+    cd's: [18, 1, 13, 3, 0, 0]
+    ability chosen: Impact
 
-    tick: 86
-    adren: 100 damage 2146.0
-    cd's: [0, 3, 0, 3, 5, 0]
-    ability chosen Asphyxiate
+    tick: 87
+    adren: 73 damage 2179.0
+    cd's: [16, 0, 11, 1, 23, 0]
+    ability chosen: GConc
 
-    tick: 94
-    adren: 85 damage 2447.0
-    cd's: [26, 0, 0, 0, 0, 0]
-    ability chosen GConc
+    tick: 91
+    adren: 81 damage 2286.0
+    cd's: [12, 5, 7, 0, 19, 0]
+    ability chosen: Wrack
 
-    tick: 98
-    adren: 93 damage 2554.0
-    cd's: [22, 5, 0, 0, 0, 0]
-    ability chosen DBreath
+    tick: 93
+    adren: 89 damage 2324.0
+    cd's: [10, 3, 5, 3, 17, 0]
+    ability chosen: Auto
 
-    tick: 100
-    adren: 100 damage 2629.5
-    cd's: [20, 3, 15, 0, 0, 0]
-    ability chosen Wrack
+    tick: 95
+    adren: 97 damage 2324.0
+    cd's: [8, 1, 3, 1, 15, 0]
+    ability chosen: Auto
+
+    tick: 97
+    adren: 100 damage 2324.0
+    cd's: [0, 6, 0, 1, 0, 13, 0]
+    ability chosen: Omnipower
