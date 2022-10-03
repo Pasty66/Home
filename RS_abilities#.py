@@ -1,3 +1,5 @@
+abilities_bar = [Asphyxiate, GConc, DBreath, Wrack, Impact, Auto]
+
 class Player:
     t_damage = 0
     adrenaline = 0
@@ -81,8 +83,7 @@ class Auto:
 #print("T1")
 
 #ability_list = [Wrack, Impact, GConc, Asphyxiate, Omnipower, DBreath, Auto]
-ability_list = [Asphyxiate, GConc, DBreath, Wrack, Impact, Auto]
-
+ability_list = abilities_bar
     
 def select(c_adren):
     adren_check = []
